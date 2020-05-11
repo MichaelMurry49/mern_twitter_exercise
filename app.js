@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const users = require("./routes/api/users");
 const tweets = require("./routes/api/tweets");
 const passport = require('passport')
+const key = require('./config/key_dev')
 
 
 if (process.env.NODE_ENV === 'production') {
