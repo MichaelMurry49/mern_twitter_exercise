@@ -1,12 +1,13 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const db = require("./config/keys").mongoURI;
+const db = require("./config/keys_prod").mongoURI;
 const bodyParser = require('body-parser');
 const users = require("./routes/api/users");
 const tweets = require("./routes/api/tweets");
 const passport = require('passport')
-const key = require('./config/key_dev')
+// const key = require('./config/key_dev')
+const path = require('path');
 
 
 if (process.env.NODE_ENV === 'production') {
