@@ -5,7 +5,7 @@ export const getTweets = () => {
 };
 
 export const getUserTweets = id => {
-    return axios.get('/api/tweets/user/${id}')
+    return axios.get(`/api/tweets/user/${id}`)
 };
 
 export const writeTweet = data => {
