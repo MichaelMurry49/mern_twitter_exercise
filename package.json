@@ -12,6 +12,7 @@
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
 
   },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -29,4 +30,5 @@
   "devDependencies": {
     "nodemon": "^2.0.3"
   }
+  
 }
